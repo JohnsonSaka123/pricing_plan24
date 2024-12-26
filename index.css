@@ -8,6 +8,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 p,h1,h2,h3{
   margin: 0;
@@ -95,4 +96,20 @@ button{
 .btn:hover{
   color: black;
   background-color: rgb(223, 51, 51);
+}
+
+@media (max-width : 480px){
+  body{
+    flex-direction: column;
+  }
+  .price_container{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .main{
+    background-attachment: scroll;
+    height: 100%;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
 }
